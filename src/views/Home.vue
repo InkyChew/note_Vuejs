@@ -1,18 +1,30 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang='pug'>
+  .row.mx-0
+    .col-2.menu
+    .col-4.list
+    .col-6.edit
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'home',
-  components: {
-    HelloWorld
+  data () {
+    return {
+    }
+  },
+  methods: {
   }
 }
 </script>
+
+<style lang='sass'>
+  .col-2.menu
+    background-color: $blue
+    height: 100vh
+  .col-4.list
+    background-color: $grey
+    height: 100vh
+  .col-6.edit
+    background-color: $white
+    height: 100vh
+</style>
